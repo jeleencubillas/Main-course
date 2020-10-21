@@ -61,8 +61,8 @@ body, html {
 
 #section3 {
     background-image: url('lazarus.jpg');
-    background-size: cover;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 #section2, #section3 {
@@ -257,14 +257,25 @@ p {
 }
 
 /* Mobile Settings */
-
 @media only screen and (max-width: 1199px) {
     body, html {
         font-size: 15px;
     }
 
-    #section1, #section2, #section3 {
+    #section1, #section3 {
         flex-direction: column;
+    }
+
+    #section2 {
+        flex-direction: column-reverse;    
+    }
+
+    #text-div {
+        margin: 40px 0 0;
+    }
+
+    #image {
+        margin-top: 40px;
     }
 
     h1, h2, h3, h4 {
@@ -281,5 +292,9 @@ p {
 
     .button-wrapper {
         text-align: center;
+    }
+
+    #divider, #divider2 {
+        width: 150%;
     }
 }
