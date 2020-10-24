@@ -84,11 +84,11 @@ input, select, textarea {
     border: 1px solid #6a7695;
     border-radius: 8px;
     box-sizing: inherit;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 input:focus, select:focus, textarea:focus {
-    border: 2px solid #6a7695;
+    border: 1px solid #263b5e;
     outline: none;
 }
 
@@ -186,4 +186,50 @@ label {
 
 
 /* Mobile Settings */
+@media only screen and (max-width: 1119px) {
+    #section {
+        flex-direction: column;
+        padding: 20px;
+    }
 
+    #intro {
+        margin: 20px 0 20px 0;
+    }
+
+    #container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #logo {
+        width: 120px;
+        margin-bottom: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #illustration {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    h2 {
+        line-height: 1.3em;
+        text-align: center;
+    }
+    
+    h3 {
+        line-height: 1.2em;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 16px;
+        text-align: center;
+    }
+  }
